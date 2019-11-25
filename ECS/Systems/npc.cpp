@@ -142,6 +142,7 @@ void NPC::npcUpdate(GLfloat t)
     for (size_t i = 0; i < npc.size(); i++)
     {
 
+        npc[i].path = spline;
         //If we have 1 or less controllPoints remaining the ai doesn't move
         if(controlPoints.size() >= 2)
         {

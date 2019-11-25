@@ -2,6 +2,7 @@
 #define COREENGINE_H
 
 #include "gltypes.h"
+#include "vec3.h"
 #include <QBasicTimer>
 #include <QTime>
 #include <QObject>
@@ -19,6 +20,10 @@ class CoreEngine : public QObject
 
     public:
         explicit CoreEngine(RenderWindow *renderWindow, MainWindow *mainWindow, QObject *parent = nullptr);
+
+
+        void addDebugLine(const gsl::Vec3 &start, const gsl::Vec3 &end, const gsl::Vec3 &color);
+
 
         RenderWindow *mRenderWindow{nullptr};    //The game window
         MainWindow *mMainWindow{nullptr};        //Main program window
