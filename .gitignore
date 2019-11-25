@@ -9,8 +9,8 @@
 *.so
 *.dll
 *.dylib
-*.las
 *.obj
+*.las
 
 # Qt-es
 
